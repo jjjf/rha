@@ -16,9 +16,12 @@
          }'>
 	</script>
 	<script type="text/javascript">
-		sap.ui.getCore().attachInit(function () {			
-			sap.ui.xmlview({
-	               viewName : "sap.ui.rha.view.App"
+		sap.ui.getCore().attachInit(function () {	
+			new sap.m.Shell({
+	               app : new sap.ui.core.ComponentContainer({
+	                  name : "sap.ui.rha",
+	                  height : "100%"
+	               })
 	            }).placeAt("content");
 
 		});
