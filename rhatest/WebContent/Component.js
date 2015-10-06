@@ -25,8 +25,16 @@ sap.ui.define([
      	// set invoice model - local
      	var oConfig = this.getMetadata().getConfig();
      	var sNamespace = this.getMetadata().getManifestEntry("sap.app").id;
-     	var oDataModel = new JSONModel(jQuery.sap.getModulePath(sNamespace, oConfig.dataLocal));
-     	this.setModel(oDataModel, "dataLocal");
+     	console.log(jQuery.sap.getModulePath(sNamespace, oConfig.invoiceLocal));
+     	//var oInvoiceModel = new JSONModel(jQuery.sap.getModulePath(sNamespace, oConfig.invoiceLocal));
+     	//var oInvoiceModel = new JSONModel(new sap.ui.model.odata.ODataModel(jQuery.sap.getModulePath(sNamespace, oConfig.invoiceLocal)));
+     	var oInvoiceModel = new JSONModel();
+//     	oInvoiceModel.attachRequestCompleted(function(){
+//     	    this.setModel(oInvoiceModel, "invoice");
+//     	});
+     	//oInvoiceModel.setData(null);
+     	oInvoiceModel.loadData(jQuery.sap.getModulePath(sNamespace, oConfig.invoiceLocal), "", false);
+     	this.setModel(oInvoiceModel, "in");
 
          // set i18n model
          var i18nModel = new ResourceModel({

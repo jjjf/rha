@@ -34,7 +34,7 @@
 	  }
 	},
 	"config": {
-	  "dataLocal": "data/Data.json"
+	  "invoiceLocal": "/Invoices.json"
 	},
 	"models": {
 	  "i18n": {

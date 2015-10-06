@@ -7,11 +7,7 @@
       <pages>
          <Page title="{i18n>homePageTitle}">
             <content>
-					<Button
-						icon="sap-icon://hello-world"
-						press="onOpenDialog"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.HelloPanel"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.DataList"/>
+               <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
             </content>
          </Page>
       </pages>
