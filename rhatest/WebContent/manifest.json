@@ -33,6 +33,9 @@
 		"sap.m": {}
 	  }
 	},
+	"config": {
+	  "dataLocal": "data/Data.json"
+	},
 	"models": {
 	  "i18n": {
 		"type": "sap.ui.model.resource.ResourceModel",

@@ -1,8 +1,9 @@
 sap.ui.define([
    "sap/ui/core/UIComponent",
    "sap/ui/model/json/JSONModel",
-   "sap/ui/model/resource/ResourceModel"
-], function (UIComponent, JSONModel, ResourceModel) {
+   "sap/ui/model/resource/ResourceModel",
+   "sap/ui/rha/controller/HelloDialog"
+   ], function (UIComponent, JSONModel, ResourceModel, HelloDialog) {
    "use strict";
    return UIComponent.extend("sap.ui.rha.Component", {
        metadata : {
@@ -21,11 +22,20 @@ sap.ui.define([
          var oModel = new JSONModel(oData);
          this.setModel(oModel);
 
+     	// set invoice model - local
+     	var oConfig = this.getMetadata().getConfig();
+     	var sNamespace = this.getMetadata().getManifestEntry("sap.app").id;
+     	var oDataModel = new JSONModel(jQuery.sap.getModulePath(sNamespace, oConfig.dataLocal));
+     	this.setModel(oDataModel, "dataLocal");
+
          // set i18n model
          var i18nModel = new ResourceModel({
             bundleName : "sap.ui.rha.i18n.i18n"
          });
          this.setModel(i18nModel, "i18n");
+		 
+         // set dialog
+		 this.helloDialog = new HelloDialog();
       }
    });
 });
