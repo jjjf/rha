@@ -34,7 +34,7 @@ sap.ui.define([
 //     	});
      	//oInvoiceModel.setData(null);
      	oInvoiceModel.loadData(jQuery.sap.getModulePath(sNamespace, oConfig.invoiceLocal), "", false);
-     	this.setModel(oInvoiceModel, "in");
+     	this.setModel(oInvoiceModel, "invoice");
 
          // set i18n model
          var i18nModel = new ResourceModel({
