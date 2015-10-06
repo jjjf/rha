@@ -4,8 +4,8 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m">
 	<Page
-				id="p1"
-				title="{i18n>Stable}" >
-				<footer><Toolbar><Button text="Action 1" /></Toolbar></footer>
+		id="p1"
+		title="{i18n>Stable}" >
+		<footer><Toolbar><Button text="Action 1" /></Toolbar></footer>
 	</Page>
 </mvc:View>
