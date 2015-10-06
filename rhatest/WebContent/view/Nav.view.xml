@@ -4,29 +4,13 @@
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m">
 
-		<NavContainer
-			id="navCon"
-			width="98%"
-			height="16em"
-			class="navContainerControl sapUiSmallMarginBottom">
-			
-			<mvc:XMLView viewName="sap.ui.rha.view.MyHorses"/>
-			<mvc:XMLView viewName="sap.ui.rha.view.HorseHistory"/>
-			<mvc:XMLView viewName="sap.ui.rha.view.HorseLive"/>
-			
-			<Page
-				id="p4"
-				title="Page 4" >
-				<footer><Toolbar><Button text="Action 4" /></Toolbar></footer>
-			</Page>
-		</NavContainer>
 
 		<HBox>
 			<Button
-				text="To 1"
+				icon="sap-icon://list"
 				press="handleNav">
 				<layoutData>
-					<FlexItemData growFactor="1" />
+					<FlexItemData growFactor="2" />
 				</layoutData>
 				<customData>
 					<core:CustomData
@@ -35,7 +19,7 @@
 				</customData>
 			</Button>
 			<Button
-				text="To 2"
+				icon="sap-icon://display"
 				press="handleNav">
 				<layoutData>
 					<FlexItemData growFactor="1" />
@@ -71,6 +55,38 @@
 				</customData>
 			</Button>
 		</HBox>
+		<NavContainer
+			id="navCon"
+			width="98%"
+			height="16em"
+			class="navContainerControl sapUiSmallMarginBottom">
+			
+			<Page
+				id="p1"
+				title="Page 1" >
+			<mvc:XMLView viewName="sap.ui.rha.view.MyHorses"/>
+				<footer><Toolbar><Button text="Action 3" /></Toolbar></footer>
+			</Page>
+			<Page
+				id="p2"
+				title="Page 2" >
+			<mvc:XMLView viewName="sap.ui.rha.view.HorseHistory"/>
+				<footer><Toolbar><Button text="Action 3" /></Toolbar></footer>
+			</Page>
+			<Page
+				id="p3"
+				title="Page 3" >
+			<mvc:XMLView viewName="sap.ui.rha.view.HorseLive"/>
+				<footer><Toolbar><Button text="Action 3" /></Toolbar></footer>
+			</Page>
+			
+			<Page
+				id="p4"
+				title="Page 4" >
+			<mvc:XMLView viewName="sap.ui.rha.view.HorseLive"/>
+				<footer><Toolbar><Button text="Action 4" /></Toolbar></footer>
+			</Page>
+		</NavContainer>
 
 		<HBox>
 			<Button
