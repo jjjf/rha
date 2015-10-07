@@ -6,16 +6,24 @@
 		<NavContainer
 			id="navCon"
 			width="98%"
-			height="16em"
+			height="100%"
 			class="navContainerControl sapUiSmallMarginBottom">
 			
     		<Page 
     			id="loginPage" enableScrolling="false" title="{i18n>Gallap}">  
-				<mvc:XMLView viewName="sap.ui.rha.view.Login"/>
+				
+		     <VBox fitContainer="true" justifyContent="Center" alignItems="Center">  
+		             <Label id="lblLogin" text="Login" design="Bold" labelFor="loginUsername" />  
+		             <Input id="loginUsername" editable="true" value="" maxLength="20"/>  
+		             <Label id="lablPass" text="Password" design="Bold"  labelFor="loginPassword"/>  
+		             <Input id="loginPassword" type="Password" editable="true" value="" maxLength="20" />   
+		             <Button id="bntLogin" text="Login" press="doLogin" />  
+		     </VBox> 
 			</Page>
 			<Page
-				id="MyHorses" >
-			<mvc:XMLView viewName="sap.ui.rha.view.MyHorses"/>
+				id="MyHorses" 
+				 title="{i18n>MyHorses}">
+				<mvc:XMLView viewName="sap.ui.rha.view.HorseTable"/>
 			</Page>
 			<Page
 				id="HorseDetail">

@@ -3,20 +3,9 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc"
    displayBlock="true">
-   <App class="sapUiRha">
+   <App class="sapUiRha" id="appMain">
       <pages>
-         <Page title="{i18n>homePageTitle}">
-            <content>
-               <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
-					<Button
-						icon="sap-icon://hello-world"
-						press="onOpenDialog"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.HelloPanel"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.DataList"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.HorseSummary"/>
-
-            </content>
-         </Page>
+         <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
       </pages>
    </App>
 </mvc:View>
