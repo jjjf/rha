@@ -34,7 +34,12 @@
 	  }
 	},
 	"config": {
+
 	  "invoiceLocal": "/Invoices.json"
+
+	  "dataLocal": "data/Data.json",
+	  "raceHorse": "data/RaceHorse.json"
+
 	},
 	"models": {
 	  "i18n": {
