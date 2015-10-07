@@ -62,10 +62,8 @@
 			class="navContainerControl sapUiSmallMarginBottom">
 			
 			<Page
-				id="p1"
-				title="Page 1" >
+				id="p1" >
 			<mvc:XMLView viewName="sap.ui.rha.view.MyHorses"/>
-				<footer><Toolbar><Button text="Action 3" /></Toolbar></footer>
 			</Page>
 			<Page
 				id="p2"

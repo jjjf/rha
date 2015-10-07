@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="sap.ui.rha.MyHorses"
+	controllerName="sap.ui.rha.controller.Nav"
 	xmlns:l="sap.ui.layout"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m">
