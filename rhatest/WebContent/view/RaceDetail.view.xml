@@ -1,0 +1,38 @@
+<core:View
+	xmlns="sap.suite.ui.commons"
+	xmlns:core="sap.ui.core"
+	controllerName="sap.ui.rha.controller.RaceDetail">
+   <GenericTile 
+		header="Average HR"
+		size="S" 
+		frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent >
+				<content>
+					<NumericContent size="S" scale="M" value="1.96" valueColor="Error" indicator="Up"/>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	<GenericTile 
+		header="Comparative Annual Totals"
+		subheader="By Region"
+		size="S" 
+		frameType="OneByOne"
+		press="press">
+		<tileContent>
+			<TileContent footer="Compare across regions" unit="EUR" size="S">
+				<content>
+					<ComparisonChart size="S" scale="M">
+				        <data>
+				        	<ComparisonData	title="Americas" value="234" color="Good"/>
+				        	<ComparisonData	title="EMEA" value="97" color="Error"/>
+				        	<ComparisonData	title="APAC" value="197" color="Critical"/>
+				        </data>
+			        </ComparisonChart>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+</core:View>

@@ -3,13 +3,9 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc"
    displayBlock="true">
-   <App class="sapUiRha">
+   <App class="sapUiRha" id="appMain">
       <pages>
-         <Page title="{i18n>homePageTitle}">
-            <content>
-               <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
-            </content>
-         </Page>
+         <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
       </pages>
    </App>
 </mvc:View>
