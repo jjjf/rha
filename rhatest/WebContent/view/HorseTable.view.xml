@@ -1,0 +1,63 @@
+<mvc:View
+	controllerName="sap.ui.rha.controller.HorseTable"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    >
+	<Panel text="Panel">
+	
+	<Table id="idHorseTable"
+            inset="false"
+            width="750px"
+            itemPress="handleSelectionChange"
+            items="{/WorkoutData}">
+      
+            <columns>
+                  <Column
+                        width="12em">
+                        
+                        <Text text="Horse" />
+                  </Column>
+                  <Column
+                        minScreenWidth="Tablet"
+				         demandPopin="true">
+                        
+                        <Text text="Jockey" />
+                  </Column>
+                  <Column
+                        minScreenWidth="Tablet"
+				        demandPopin="true">
+      
+                        <Text text="Sex" />
+                  </Column>
+                  <Column
+                        minScreenWidth="Tablet"
+				        demandPopin="true">
+
+                        <Text text="Age" />
+                  </Column>
+                  
+            </columns>
+         <items>
+                  <ColumnListItem  type="Navigation">
+                        <cells>
+                        
+                              <Text
+                                    text="{Horse}"/>
+                              <Text
+                                    text="{Jockey}" />
+                              <Text
+                                    text="{Sex}" />
+                              <Text
+                                    text="{Age}" />   
+                              
+                        </cells>
+                  </ColumnListItem>
+            </items>
+         
+      </Table>
+      
+
+	</Panel>
+</mvc:View>
