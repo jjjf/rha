@@ -3,9 +3,9 @@
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m">
-			<Page
-				id="p2"
-				title="Page 2" >
-				<footer><Toolbar><Button text="Action 2" /></Toolbar></footer>
-			</Page>
-			</mvc:View>
+	<Page
+		id="p2"
+		title="Page 2" >
+		<footer><Toolbar><Button text="Action 2" /></Toolbar></footer>
+	</Page>
+</mvc:View>

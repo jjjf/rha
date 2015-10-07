@@ -1,0 +1,14 @@
+<mvc:View
+	controllerName="sap.ui.rha.controller.HorseDetail"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    >
+    <Page>
+	<Panel text="Panel">
+	
+	<Text text="{Horse}"></Text>
+	</Panel>
+	</Page>
+</mvc:View>

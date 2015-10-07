@@ -1,0 +1,31 @@
+<mvc:View
+	controllerName="sap.ui.rha.controller.HorseIconTabBar"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<IconTabBar
+		id="idIconTabBar"
+		select="handleIconTabBarSelect"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter
+				showAll="true"
+				
+				text="Horse Summary"
+				keys="All" />
+			<IconTabSeparator />
+			<IconTabFilter
+				icon="sap-icon://begin"
+				iconColor="Positive"
+				
+				text="Analtics"
+				key="Ok" />
+			<IconTabFilter
+				icon="sap-icon://compare"
+				iconColor="Critical"
+				
+				text="Test"
+				key="Heavy" />
+			
+		</items>
+	</IconTabBar>
+</mvc:View>

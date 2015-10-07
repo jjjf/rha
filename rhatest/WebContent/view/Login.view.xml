@@ -1,0 +1,13 @@
+<core:View height="100%" 
+	controllerName="sap.ui.rha.controller.Nav"   
+    xmlns="sap.m" xmlns:core="sap.ui.core"  
+    xmlns:mvc="sap.ui.core.mvc"  
+    xmlns:html="http://www.w3.org/1999/xhtml">
+     <VBox fitContainer="true" justifyContent="Center" alignItems="Center">  
+             <Label id="lblLogin" text="Login" design="Bold" labelFor="loginUsername" />  
+             <Input id="loginUsername" editable="true" value="" maxLength="20"/>  
+             <Label id="lablPass" text="Password" design="Bold"  labelFor="loginPassword"/>  
+             <Input id="loginPassword" type="Password" editable="true" value="" maxLength="20" />   
+             <Button id="bntLogin" text="Login" press="doLogin" />  
+     </VBox>  
+</core:View>

@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" 
+           xmlns:mvc="sap.ui.core.mvc" 
+           xmlns:table="sap.ui.table" 
+           xmlns="sap.ui.commons" 
+           xmlns:cl="sap.ui.commons.layout" 
+           controllerName="sap.ui.rha.controller.HorseSummary"  
+           xmlns:html="http://www.w3.org/1999/xhtml" 
+           resourceBundleUrl="assets/i18n/i18n.properties" 
+           resourceBundleAlias="i18n">  
+     <Panel
+      headerText="{i18n>helloPanelTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto" >
+           <TabStrip width="800px" height="200px" tooltip="test">  
+           <tabs>  
+                 <Tab id="mytab" text="Race Horse Info" tooltip="test">  
+                 	<mvc:XMLView viewName="sap.ui.rha.view.HorseTable" width="100%"/>
+                 	
+                 </Tab>  
+           </tabs>  
+       </TabStrip>
+     </Panel>    
+</core:View>  

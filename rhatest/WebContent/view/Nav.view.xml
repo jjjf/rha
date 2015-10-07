@@ -2,31 +2,39 @@
 	controllerName="sap.ui.rha.controller.Nav"
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m">
-
+	xmlns="sap.m">		
 		<NavContainer
 			id="navCon"
 			width="98%"
 			height="16em"
 			class="navContainerControl sapUiSmallMarginBottom">
 			
+    		<Page 
+    			id="loginPage" enableScrolling="false" title="{i18n>Gallap}">  
+				<mvc:XMLView viewName="sap.ui.rha.view.Login"/>
+			</Page>
+			<Page
+				id="MyHorses" >
 			<mvc:XMLView viewName="sap.ui.rha.view.MyHorses"/>
-			<mvc:XMLView viewName="sap.ui.rha.view.HorseHistory"/>
+			</Page>
+			<Page
+				id="HorseDetail">
 			<mvc:XMLView viewName="sap.ui.rha.view.HorseLive"/>
+			</Page>
 			
 			<Page
 				id="p4"
 				title="Page 4" >
+			<mvc:XMLView viewName="sap.ui.rha.view.RaceDetail"/>
 				<footer><Toolbar><Button text="Action 4" /></Toolbar></footer>
 			</Page>
 		</NavContainer>
-
-		<HBox>
+<HBox>
 			<Button
-				text="To 1"
+				icon="sap-icon://list"
 				press="handleNav">
 				<layoutData>
-					<FlexItemData growFactor="1" />
+					<FlexItemData growFactor="2" />
 				</layoutData>
 				<customData>
 					<core:CustomData
@@ -35,7 +43,7 @@
 				</customData>
 			</Button>
 			<Button
-				text="To 2"
+				icon="sap-icon://display"
 				press="handleNav">
 				<layoutData>
 					<FlexItemData growFactor="1" />
@@ -71,7 +79,6 @@
 				</customData>
 			</Button>
 		</HBox>
-
 		<HBox>
 			<Button
 				text="Back"
