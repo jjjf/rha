@@ -12,6 +12,19 @@
 			width="40%"
 	>
 		<StandardTile
+		    id="tileDate"
+			header="DAY"
+			size="M"
+			frameType="TwoByOne"
+			icon="sap-icon://{icon}"
+				type="{type}"
+				number=""
+				numberUnit=""
+				title="DAY"
+				info="The race date"
+				infoState="{infoState}" />
+				
+		<StandardTile
 		    id="tileDistance"
 			header="Distance"
 			size="M"
@@ -19,7 +32,7 @@
 			icon="sap-icon://{icon}"
 				type="{type}"
 				number=""
-				numberUnit="2 days ago"
+				numberUnit="Furlong"
 				title="Distance"
 				info="The distance covered in last race"
 				infoState="{infoState}" />
@@ -33,7 +46,7 @@
 			icon="sap-icon://{icon}"
 				type="{type}"
 				number=""
-				numberUnit="KM/Hr"
+				numberUnit=""
 				title="Speed"
 				info="The average speed in last race"
 				infoState="30" />
@@ -50,5 +63,6 @@
 				info="The average Heart Rate"
 				infoState="{infoState}" />	
 	
-	</TileContainer>	
+	</TileContainer>
+		
 </mvc:View>

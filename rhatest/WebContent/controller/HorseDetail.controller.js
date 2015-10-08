@@ -19,11 +19,13 @@ sap.ui.define([
 	     	var tileDistance = this.getView().byId("tileDistance");
  	    	var tileSpeed =    this.getView().byId("tileSpeed");
  	    	var tileHeartRate = this.getView().byId("tileHeartRate");
+ 	    	var tileDate = this.getView().byId("tileDate");
 	     	$(data.WorkoutData).each(function(i, v) {	     	    
 	     		if (v.Horse == horseName) {
 	     	    	tileDistance.setNumber(v.Distance);
 	     	    	tileSpeed.setNumber(v.TopSpeed);
 	     	    	tileHeartRate.setNumber(v.HeartRate);
+	     	    	tileDate.setNumber(v.Date);
 	     	        return;
 	     	    }
 	     	});

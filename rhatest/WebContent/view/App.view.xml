@@ -5,7 +5,7 @@
    displayBlock="true">
    <App class="sapUiRha" id="App">
       <pages>
-         <Page title="{i18n>homePageTitle}">
+         <Page title="{i18n>homePageTitle}"  background="sap.ui.rha.Images.img_login.jpg">
             <content>
                <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
 					<Button
