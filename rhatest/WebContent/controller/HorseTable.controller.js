@@ -36,8 +36,8 @@ sap.ui.define([
 			debugger;
 			//var navCon = this.getView().getParent().byId("navCon");
 			var navCon = this.getView().getParent().getParent()
-			// this doesn't work
-			navCon.to(this.getView().byId("RaceDetail"),{
+			// holy hack
+			navCon.to(navCon.getPages()[2],{
 				Horse : oCtx.getProperty("Horse")
 			});
 		}
