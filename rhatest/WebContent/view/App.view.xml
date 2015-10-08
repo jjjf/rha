@@ -3,7 +3,7 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc"
    displayBlock="true">
-   <App class="sapUiRha" id="appMain">
+   <App class="sapUiRha" id="app">
       <pages>
          <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
       </pages>

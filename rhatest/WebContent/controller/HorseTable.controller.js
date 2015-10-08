@@ -35,7 +35,7 @@ sap.ui.define([
 			var oItem, oCtx;
 			oItem = oEvent.getSource();
 			oCtx = oItem.getBindingContext();
-			this.getRouter().navTo("HorseDetail",{
+			this.getRouter().navTo("RaceDetail",{
 				Horse : oCtx.getProperty("Horse")
 			});
 
