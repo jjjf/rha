@@ -66,7 +66,7 @@ sap.ui.define([
          jQuery.sap.require("sap.m.routing.RouteMatchedHandler");  
          jQuery.sap.require("sap.ui.core.routing.Router");  
          var router = this.getRouter();
-         alert(router);
+         
          router.initialize();
          var oModel = new JSONModel(oData);
          this.setModel(oModel);

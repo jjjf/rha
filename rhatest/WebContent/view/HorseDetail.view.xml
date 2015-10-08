@@ -12,12 +12,13 @@
 			width="40%"
 	>
 		<StandardTile
+		    id="tileDistance"
 			header="Distance"
 			size="M"
 			frameType="TwoByOne"
 			icon="sap-icon://{icon}"
 				type="{type}"
-				number="2 Furlong"
+				number=""
 				numberUnit="2 days ago"
 				title="Distance"
 				info="The distance covered in last race"
@@ -25,23 +26,25 @@
 	
 	
       <StandardTile
+            id="tileSpeed"
 			header="Speed"
 			size="M"
 			frameType="TwoByOne"
 			icon="sap-icon://{icon}"
 				type="{type}"
-				number="40"
+				number=""
 				numberUnit="KM/Hr"
 				title="Speed"
 				info="The average speed in last race"
 				infoState="30" />
 		<StandardTile
+			id="tileHeartRate"
 			header="HeartRate"
 			size="M"
 			frameType="TwoByOne"
 			icon="sap-icon://{icon}"
 				type="{type}"
-				number="70"
+				number=""
 				numberUnit=""
 				title="Heart Rate"
 				info="The average Heart Rate"
