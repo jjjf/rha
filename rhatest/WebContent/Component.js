@@ -8,19 +8,66 @@ sap.ui.define([
    return UIComponent.extend("sap.ui.rha.Component", {
        metadata : {
 		rootView: "sap.ui.rha.view.App",
-		manifest: "json"
+		manifest: "json",
+		
+		"routing": {
+			  "config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "sap.ui.rha.view",
+				"controlId": "App",
+				"controlAggregation": "pages"
+			  },
+			  "routes": [
+				{
+				  "pattern": "",
+				  "name": "Login",
+				  "target": "Login"
+				},
+				{
+					  "pattern": "Table",
+					  "name": "HorseTable",
+					  "target": "HorseTable"
+					},
+				{
+				  "pattern": "Detail/{horsePath}",
+				  "name": "HorseDetail",
+				  "target": "HorseDetail"
+				}
+			  ],
+			  "targets": {
+				"Login": {
+				  "viewName": "Login"
+				},
+				"HorseTable": {
+				  "viewName": "HorseTable"
+				},
+				"HorseDetail": {
+				  "viewName": "HorseDetail"
+				}
+				
+			  }
+			}
+			
 	  },
+	  
+	  	  
       init : function () {
-    	 jQuery.sap.require("sap.m.routing.RouteMatchedHandler");
-         
-    	 // call the init function of the parent
+         // call the init function of the parent
          UIComponent.prototype.init.apply(this, arguments);
+         
+         
          // set data model
          var oData = {
             recipient : {
                name : "World"
             }
          };
+         jQuery.sap.require("sap.m.routing.RouteMatchedHandler");  
+         jQuery.sap.require("sap.ui.core.routing.Router");  
+         var router = this.getRouter();
+         alert(router);
+         router.initialize();
          var oModel = new JSONModel(oData);
          this.setModel(oModel);
 
@@ -48,9 +95,6 @@ sap.ui.define([
 		 
          // set dialog
 		 this.helloDialog = new HelloDialog();
-		
-		 // create the views based on the url/hash
-		 //this.getRouter().initialize();
       }
    });
 });

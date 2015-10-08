@@ -30,18 +30,23 @@ sap.ui.define([
 
 
 		},
-		handleSelectionChange: function(evt) {
-			var oCtx;
-			oCtx = evt.getParameter('listItem').getBindingContext();
-			debugger;
-			//var navCon = this.getView().getParent().byId("navCon");
-			var navCon = this.getView().getParent().getParent()
-			// holy hack
-			navCon.to(navCon.getPages()[2],{
-				Horse : oCtx.getProperty("Horse")
-			});
-		}
-	})
+		handleSelectionChange: function(oEvent) {
+			var oItem = oEvent.getSource();
+			
+			//var oCtx = oEvent.getParameter('').getBindingContext();
+			var oCtx = oEvent.getSource().getBindingContext();
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+//			alert(oItem.getBindingContext("data/RaceHorse").getPath().substr(1));
+			oRouter.navTo("HorseDetail",{horsePath: oCtx.getProperty("Horse")
+					}
+);
+			}
+
+		
+		
+	
+	
+	});
 
 	return TableController;
 

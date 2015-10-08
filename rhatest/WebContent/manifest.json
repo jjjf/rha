@@ -1,5 +1,37 @@
 {
   "_version": "1.1.0",
+  
+  "routing": {
+	  "config": {
+		"routerClass": "sap.m.routing.Router",
+		"viewType": "XML",
+		"viewPath": "sap.ui.rha.view",
+		"controlId": "App",
+		"controlAggregation": "views"
+	  },
+	  "routes": [
+		{
+		  "pattern": "",
+		  "name": "HorseTable",
+		  "target": "HorseTable"
+		},
+		{
+		  "pattern": "Detail",
+		  "name": "HorseDetail",
+		  "target": "HorseDetail"
+		}
+	  ],
+	  "targets": {
+		"HorseTable": {
+		  "viewName": "HorseTable"
+		},
+		"HorseDetail": {
+		  "viewName": "HorseDetail"
+		}
+	  }
+	}
+  
+  
   "sap.app": {
 	"_version": "1.1.0",
 	"id": "sap.ui.rha",
@@ -55,35 +87,7 @@
 		  "uri": "css/style.css"
 		}
 	  ]
-	},
-	"routing": {
-	  "config": {
-		"routerClass": "sap.m.routing.Router",
-		"viewType": "XML",
-		"viewPath": "sap.ui.rha.view",
-		"controlId": "app",
-		"controlAggregation": "pages"
-	  },
-	  "routes": [
-		{
-		  "pattern": "",
-		  "name": "app",
-		  "target": "App"
-		},
-		{
-		  "pattern": "myhorses",
-		  "name": "myhorses",
-		  "target": "myhorses"
-		}
-	  ],
-	  "targets": {
-		"app": {
-		  "viewName": "App"
-		},
-		"myhorses": {
-		  "viewName": "MyHorsesTable"
-		}
-	  }
 	}
   }
 }
+

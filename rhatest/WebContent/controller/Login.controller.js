@@ -1,9 +1,26 @@
 sap.ui.define([
-   "sap/ui/core/mvc/Controller",
-   "sap/m/MessageToast"
-], function (Controller, MessageToast) {
-   "use strict";
-   return Controller.extend("sap.ui.rha.controller.Login", {
-      
-   });
+		'jquery.sap.global',
+//		'./Formatter',
+		'sap/ui/core/mvc/Controller',
+		'sap/ui/model/json/JSONModel'
+	], function(jQuery, Controller, JSONModel) {
+	"use strict";
+
+	var TableController = Controller.extend("sap.ui.rha.controller.Login", {
+		
+
+		doLogin: function(oEvent) {
+			
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("HorseTable");
+			}
+
+		
+		
+	
+	
+	});
+
+	return TableController;
+
 });

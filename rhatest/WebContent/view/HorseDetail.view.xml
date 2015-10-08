@@ -2,13 +2,50 @@
 	controllerName="sap.ui.rha.controller.HorseDetail"
 	xmlns:l="sap.ui.layout"
 	xmlns:mvc="sap.ui.core.mvc"
+	
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core"
     >
-    <Page>
-	<Panel text="Panel">
+    
+	<TileContainer
+			id="container"
+			width="40%"
+	>
+		<StandardTile
+			header="Distance"
+			size="M"
+			frameType="TwoByOne"
+			icon="sap-icon://{icon}"
+				type="{type}"
+				number="2 Furlong"
+				numberUnit="2 days ago"
+				title="Distance"
+				info="The distance covered in last race"
+				infoState="{infoState}" />
 	
-	<Text text="{Horse}"></Text>
-	</Panel>
-	</Page>
+	
+      <StandardTile
+			header="Speed"
+			size="M"
+			frameType="TwoByOne"
+			icon="sap-icon://{icon}"
+				type="{type}"
+				number="40"
+				numberUnit="KM/Hr"
+				title="Speed"
+				info="The average speed in last race"
+				infoState="30" />
+		<StandardTile
+			header="HeartRate"
+			size="M"
+			frameType="TwoByOne"
+			icon="sap-icon://{icon}"
+				type="{type}"
+				number="70"
+				numberUnit=""
+				title="Heart Rate"
+				info="The average Heart Rate"
+				infoState="{infoState}" />	
+	
+	</TileContainer>	
 </mvc:View>

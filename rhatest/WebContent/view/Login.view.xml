@@ -1,5 +1,5 @@
 <core:View height="100%" 
-	controllerName="sap.ui.rha.controller.Nav"   
+	controllerName="sap.ui.rha.controller.Login"   
     xmlns="sap.m" xmlns:core="sap.ui.core"  
     xmlns:mvc="sap.ui.core.mvc"  
     xmlns:html="http://www.w3.org/1999/xhtml">
