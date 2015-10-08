@@ -26,8 +26,8 @@
 				<mvc:XMLView viewName="sap.ui.rha.view.HorseTable"/>
 			</Page>
 			<Page
-				id="HorseDetail">
-			<mvc:XMLView viewName="sap.ui.rha.view.HorseLive"/>
+				id="RaceDetail">
+			<mvc:XMLView viewName="sap.ui.rha.view.RaceDetail"/>
 			</Page>
 			
 			<Page

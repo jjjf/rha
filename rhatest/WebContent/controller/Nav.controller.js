@@ -6,6 +6,7 @@ sap.ui.define([
 	return Controller.extend("sap.ui.rha.controller.Nav", {
 		handleNav: function(evt) {
 			var navCon = this.getView().byId("navCon");
+			debugger;
 			var target = evt.getSource().data("target");
 			if (target) {
 				navCon.to(this.getView().byId(target), "slide");

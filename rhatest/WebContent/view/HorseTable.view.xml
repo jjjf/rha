@@ -40,7 +40,7 @@
                   
             </columns>
          <items>
-                  <ColumnListItem  type="Navigation">
+                  <ColumnListItem  type="Active">
                         <cells>
                         
                               <Text

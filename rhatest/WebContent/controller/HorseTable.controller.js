@@ -30,19 +30,17 @@ sap.ui.define([
 
 
 		},
-		handleSelectionChange: function() {
-			alert('test');
-			var oItem, oCtx;
-			oItem = oEvent.getSource();
-			oCtx = oItem.getBindingContext();
-			this.getRouter().navTo("RaceDetail",{
+		handleSelectionChange: function(evt) {
+			var oCtx;
+			oCtx = evt.getParameter('listItem').getBindingContext();
+			debugger;
+			//var navCon = this.getView().getParent().byId("navCon");
+			var navCon = this.getView().getParent().getParent()
+			// this doesn't work
+			navCon.to(this.getView().byId("RaceDetail"),{
 				Horse : oCtx.getProperty("Horse")
 			});
-
 		}
-		
-	
-	
 	})
 
 	return TableController;
