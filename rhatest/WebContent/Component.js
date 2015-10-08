@@ -11,7 +11,9 @@ sap.ui.define([
 		manifest: "json"
 	  },
       init : function () {
-         // call the init function of the parent
+    	 jQuery.sap.require("sap.m.routing.RouteMatchedHandler");
+         
+    	 // call the init function of the parent
          UIComponent.prototype.init.apply(this, arguments);
          // set data model
          var oData = {
@@ -48,7 +50,7 @@ sap.ui.define([
 		 this.helloDialog = new HelloDialog();
 		
 		 // create the views based on the url/hash
-		 this.getRouter().initialize();
+		 //this.getRouter().initialize();
       }
    });
 });

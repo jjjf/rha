@@ -67,21 +67,21 @@
 	  "routes": [
 		{
 		  "pattern": "",
-		  "name": "overview",
-		  "target": "overview"
+		  "name": "app",
+		  "target": "App"
 		},
 		{
-		  "pattern": "detail",
-		  "name": "detail",
-		  "target": "detail"
+		  "pattern": "myhorses",
+		  "name": "myhorses",
+		  "target": "myhorses"
 		}
 	  ],
 	  "targets": {
-		"overview": {
-		  "viewName": "Overview"
+		"app": {
+		  "viewName": "App"
 		},
-		"detail": {
-		  "viewName": "Detail"
+		"myhorses": {
+		  "viewName": "MyHorsesTable"
 		}
 	  }
 	}
