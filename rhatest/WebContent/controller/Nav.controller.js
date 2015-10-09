@@ -24,6 +24,7 @@ sap.ui.define([
 		doLogin : function (evt) {
 	    	 var u = this.byId('loginUsername').getValue();
 	    	 var p = this.byId('loginPassword').getValue();
+	    	 debugger;
 	         var oBundle = this.getView().getModel("i18n").getResourceBundle();
 	    	 if (false) {//(u.length == 0 || p.length == 0)) {
 	    		 var sMsg = oBundle.getText("loginFailed");

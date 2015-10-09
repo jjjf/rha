@@ -20,7 +20,7 @@
 				number=""
 				numberUnit=""
 				title="Next Race"
-				info="The race date"
+				info="Next Race date"
 				infoState="{infoState}" />
 				
 		<StandardTile
@@ -33,7 +33,7 @@
 				number=""
 				numberUnit="Furlongs"
 				title="Distance"
-				info="Distance covered last race"
+				info="Distance last race"
 				infoState="{infoState}" />	
       <StandardTile
             id="tileSpeed"
@@ -57,7 +57,7 @@
 				number=""
 				numberUnit=""
 				title="Heart Rate"
-				info="average Heart Rate"
+				info="Average Heart Rate"
 				infoState="{infoState}" />	
 	
 	</TileContainer>
