@@ -7,14 +7,7 @@
       <pages>
          <Page title="{i18n>homePageTitle}"  background="sap.ui.rha.Images.img_login.jpg">
             <content>
-               <mvc:XMLView viewName="sap.ui.rha.view.Nav"/>
-					<Button
-						icon="sap-icon://hello-world"
-						press="onOpenDialog"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.HelloPanel"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.DataList"/>
-               <mvc:XMLView viewName="sap.ui.rha.view.HorseTable"/>
-				<mvc:XMLView viewName="sap.ui.rha.view.HorseDetail"/>
+               
             </content>
          </Page>
       </pages>

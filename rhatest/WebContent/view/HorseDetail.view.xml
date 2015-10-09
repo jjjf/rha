@@ -6,10 +6,9 @@
 	xmlns="sap.m"
 	xmlns:core="sap.ui.core"
     >
-    
 	<TileContainer
 			id="container"
-			width="40%"
+			width="100%"
 	>
 		<StandardTile
 		    id="tileDate"
@@ -20,7 +19,7 @@
 				type="{type}"
 				number=""
 				numberUnit=""
-				title="DAY"
+				title="Next Race"
 				info="The race date"
 				infoState="{infoState}" />
 				
@@ -32,12 +31,10 @@
 			icon="sap-icon://{icon}"
 				type="{type}"
 				number=""
-				numberUnit="Furlong"
+				numberUnit="Furlongs"
 				title="Distance"
-				info="The distance covered in last race"
-				infoState="{infoState}" />
-	
-	
+				info="Distance covered last race"
+				infoState="{infoState}" />	
       <StandardTile
             id="tileSpeed"
 			header="Speed"
@@ -48,7 +45,7 @@
 				number=""
 				numberUnit=""
 				title="Speed"
-				info="The average speed in last race"
+				info="Average speed last race"
 				infoState="30" />
 		<StandardTile
 			id="tileHeartRate"
@@ -60,9 +57,8 @@
 				number=""
 				numberUnit=""
 				title="Heart Rate"
-				info="The average Heart Rate"
+				info="average Heart Rate"
 				infoState="{infoState}" />	
 	
 	</TileContainer>
-		
 </mvc:View>

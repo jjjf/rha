@@ -2,6 +2,7 @@
 	xmlns="sap.suite.ui.commons"
 	xmlns:core="sap.ui.core"
 	controllerName="sap.ui.rha.controller.RaceDetail">
+	<Tiles>
    <GenericTile 
 		header="Average HR"
 		size="S" 
@@ -35,4 +36,5 @@
 			</TileContent>
 		</tileContent>
 	</GenericTile>
+	</Tiles>
 </core:View>

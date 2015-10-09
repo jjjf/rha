@@ -4,6 +4,13 @@ sap.ui.define([
 ], function (Controller, MessageToast) {
 	"use strict";
 	return Controller.extend("sap.ui.rha.controller.Nav", {
+		
+		onInit: function() {
+			$('body').on('swipeleft', '.swipe-page', function(e) {
+				var navCon = this.getView().byId("navCon");
+				navCon.back();
+	        }.bind(this));  
+		},
 		handleNav: function(evt) {
 			var navCon = this.getView().byId("navCon");
 			debugger;
