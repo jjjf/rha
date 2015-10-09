@@ -33,11 +33,11 @@
 				number=""
 				numberUnit="Furlongs"
 				title="Distance"
-				info="Distance last race"
+				info="Last race"
 				infoState="{infoState}" />	
       <StandardTile
             id="tileSpeed"
-			header="Speed"
+			header="Average Speed"
 			size="M"
 			frameType="TwoByOne"
 			icon="sap-icon://{icon}"
@@ -45,7 +45,7 @@
 				number=""
 				numberUnit=""
 				title="Speed"
-				info="Average speed last race"
+				info="Last race"
 				infoState="30" />
 		<StandardTile
 			id="tileHeartRate"
@@ -56,7 +56,7 @@
 				type="{type}"
 				number=""
 				numberUnit=""
-				title="Heart Rate"
+				title="Average HR"
 				info="Average Heart Rate"
 				infoState="{infoState}" />	
 	
